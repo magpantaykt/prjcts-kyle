@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wireframes, Mockups, and Prototypes</title>
+
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<!-- End of Bootstrap Link -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="sticky-top bg-navbar p-1 navbar navbar-expand-lg navbar-light bg-light">
+	  	<div class="container">
+	    	<a id="logo"  class="navbar-brand" href="#landing">Logo</a>
+	    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      		<span class="navbar-toggler-icon"></span>
+	    	</button>
+	    	<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+	      		<div class="navbar-nav nav-item">
+	        		<a class="nav-link" aria-current="page" href="#">About Me</a>
+	        		<a class="nav-link" href="#">My Works</a>
+	        		<a class="nav-link" href="#">Contact</a>
+	      		</div>
+	    	</div>
+	  	</div>
+	</nav>
+
+	<!-- LANDING PAGE -->
+	<div id="landing" class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-md-8 offset-md-2 col-12 header-text">
+				<h1 id="title" class="header-title">Seeing the world through my lens</h1>
+				<div class="headerBtn-grp text-center mt-5">
+					<a href="#gallery" class="header-btn" id="base">View My World</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LANDING PAGE/BANNER -->
+
+	<!-- About -->
+	<div  id="about" class="container-fluid py-5">
+		<div class="row justify-content-center align-items-center gap-5">
+			<div class="col-md-3 my-5">
+				<img src="../images/about.png" class="img-fluid">
+			</div>
+			<div class="col-md-7 my-5">
+				<h4>Hi! I'm John Doe</h4>
+				<p>I am a passionate photographer who loves capturing life's special moments. From candid shots of everyday life to capturing the beauty of nature, I strive to create beautiful images that will last a lifetime. I am always looking for new opportunities to create unique and inspiring photos that are sure to leave a lasting impression.</p>
+				<p>I have been a photographer for many years and have had the privilege of working with some of the most talented professionals in the industry. I have had the opportunity to travel to some of the most beautiful places in the world and capture the essence of each location. I am constantly learning new techniques and expanding my knowledge of photography to ensure my images are of the highest quality. I am excited to share my passion with others and create memories that will last a lifetime.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- My Projects -->
+	<div id="projects" class="container bg-light">
+		<div class="row">
+			<div class="col-md-4 p-5">
+				<img src="../images/image 3.png" class="img-fluid">
+			</div>
+			<div class="col-md-4 p-5">
+				<img src="../images/image 4.png" class="img-fluid">
+			</div>
+			<div class="col-md-4  p-5">
+				<img src="../images/image 5.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div id="prefooter" class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-md-6 min-vh-100 d-flex flex-column align-items-center justify-content-center" id="footer-left">
+				<p class="text-center">Follow me on social media</p>
+				<div class="d-flex justify-content-center align-items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 53 51" fill="none" class="mx-1">
+					  <path d="M30.1386 48.4496V27.5124H37.8095L38.958 19.3528H30.1384V14.1432C30.1384 11.7808 30.8543 10.171 34.5523 10.171L39.2684 10.1689V2.87104C38.4527 2.77178 35.653 2.54956 32.3962 2.54956C25.5962 2.54956 20.9409 6.35206 20.9409 13.3354V19.3528H13.2502V27.5124H20.9409V48.4494H30.1386V48.4496Z" fill="white"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="29" viewBox="0 0 55 51" fill="none" class="mx-1">
+					  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.75 25.4998C2.75 16.3322 2.75 11.7484 5.1059 8.44681C6.15793 6.9725 7.51957 5.70988 9.10952 4.73437C12.67 2.5498 17.6134 2.5498 27.5 2.5498C37.3866 2.5498 42.3299 2.5498 45.8905 4.73437C47.4804 5.70988 48.8421 6.9725 49.8941 8.44681C52.25 11.7484 52.25 16.3322 52.25 25.4998C52.25 34.6674 52.25 39.2512 49.8941 42.5528C48.8421 44.0271 47.4804 45.2897 45.8905 46.2652C42.33 48.4498 37.3867 48.4498 27.5001 48.4498H27.5H27.4999C17.6133 48.4498 12.67 48.4498 9.10952 46.2652C7.51957 45.2897 6.15793 44.0271 5.1059 42.5528C2.75 39.2512 2.75 34.6674 2.75 25.4998ZM40.3139 25.5005C40.3139 32.0625 34.5772 37.382 27.5006 37.382C20.4239 37.382 14.6872 32.0625 14.6872 25.5005C14.6872 18.9386 20.4239 13.619 27.5006 13.619C34.5772 13.619 40.3139 18.9386 40.3139 25.5005ZM27.5006 33.3622C32.183 33.3622 35.9788 29.8424 35.9788 25.5005C35.9788 21.1587 32.183 17.6389 27.5006 17.6389C22.8181 17.6389 19.0223 21.1587 19.0223 25.5005C19.0223 29.8424 22.8181 33.3622 27.5006 33.3622ZM40.82 15.8139C42.4828 15.8139 43.8308 14.564 43.8308 13.0221C43.8308 11.4802 42.4828 10.2303 40.82 10.2303C39.1572 10.2303 37.8092 11.4802 37.8092 13.0221C37.8092 14.564 39.1572 15.8139 40.82 15.8139Z" fill="white"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="37" viewBox="0 0 50 35" fill="none" class="mx-2">
+					  <path d="M26.394 34.8539L16.2591 34.6682C12.9776 34.6034 9.68795 34.7326 6.47082 34.062C1.57681 33.0599 1.2301 28.1466 0.867308 24.0253C0.367415 18.2313 0.560938 12.3321 1.5043 6.58644C2.03686 3.36252 4.1327 1.43878 7.37384 1.22944C18.3151 0.469717 29.3291 0.559752 40.246 0.91419C41.399 0.946683 42.5599 1.12427 43.6968 1.32642C49.3087 2.31235 49.4456 7.88018 49.8093 12.5672C50.1721 17.3027 50.0189 22.0624 49.3255 26.7656C48.7692 30.6597 47.7048 33.9253 43.213 34.2405C37.585 34.6528 32.0861 34.9846 26.4423 34.879C26.4425 34.8539 26.4101 34.8539 26.394 34.8539ZM20.4357 24.9951C24.6768 22.5545 28.8371 20.1545 33.054 17.7303C28.8049 15.2896 24.6526 12.8897 20.4357 10.4654V24.9951Z" fill="white"/>
+					</svg>
+				</div>
+			</div>
+			<div class="col-md-6 min-vh-100 d-flex flex-column align-items-center justify-content-center" id="footer-right">
+				<div class="w-75 mb-4">
+					<h4>Get in Touch</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				<form class="w-75">
+					<div class="form-group mb-3">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" class="form-control" placeholder="John Doe">
+					</div>
+					<div class="form-group mb-3">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" class="form-control" placeholder="johndoe@email.com">
+					</div>
+					<div class="form-group mb-4">
+						<label for="message">Message</label>
+						<textarea id="message" placeholder="Message" rows="5" class="w-100 p-2"></textarea>
+					</div>
+					<div class="d-flex justify-content-end align-items-end">
+						<button type="button" class="">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid p-1">
+		<div class="d-flex justify-content-center align-items-center">
+			<p class="mb-0">Copyright. John Doe Photography</p>				
+		</div>
+	</div>		
+
+
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<!-- End of Bootstrap Script -->
+</body>
+</html>
