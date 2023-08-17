@@ -1,0 +1,72 @@
+* {
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	background: skyblue;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+h1{
+/*	color: yellow;*/
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: indianred;
+	font-size: 24px;
+}
+
+/*section{
+	text-align: -webkit-center;
+}
+*/
+#headerTitle, .header-title{
+	color: inherit !important;
+}
+
+
+#zuitt-motto{
+	letter-spacing: 5px;
+}
+
+/* Adjacent selector */
+/*h3 + img {
+	width: 300px !important;
+	height: 300px !important;
+	border-radius: 50%;	
+}*/
+
+/*General Sibling Selector*/
+/*h2 ~ a{
+	text-decoration: none;
+}*/
+
+.image-container, .image1{
+	width: 300px !important;
+	height: 300px !important;
+	border-radius: 50%;
+}
+
+
+/* Descendant Selector */
+ol li{
+	text-transform: capitalize;
+}
+
+.offering-item1{
+	color: darkgoldenrod;
+}
+
+.offering-item2{
+	color: indianred;
+}
+
+.offering-item3{
+	color: midnightblue;
+}

@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container{
+	margin: 0 20px;
+}
+
+/*Disucssion: Code Along*/
+/* 1 REM = DEFAULT FONT SIZE = 16PX */
+/* MARGIN VS PADDING */
+/* PADDING IS BEST USED WHEN CREATING SPACE BETWEEN ELEMENTS. MARGIN IS BEST USED WHEN CREATING SPACE BETWEEN CONTENTS */
+
+/* FOR NAV BAR */
+nav{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #C2195B;
+}
+
+section{
+	margin-bottom: 30px;
+}
+
+nav > ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav .nav, nav .nav-logo{
+	display: inline;
+}
+
+/*ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+*/
+ul li{
+	margin: 0 15px;
+	align-self: center;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: #C2195B;
+}
+
+/*p{
+	text-align: justify;
+}*/
+
+/* FOR NAV BAR */
+
+/*INTRO SECTION*/
+
+#intro{
+	padding: 0 10%;
+	text-align: center;
+}
+
+#intro h2, #intro p{
+	margin-bottom: 1rem;
+}
+
+#intro .btn-container{
+	margin-top: 10px;
+}
+
+#intro .btn-container button{
+	padding: 10px;
+	border-radius: 10px;
+/*	background: #60C8D1; */
+	background: #C2195B;
+	font-weight: bold;
+}
+
+#intro .btn-container button:hover{
+	background: #FFF;
+	border-color: #C2195B;
+	color: #C2195B;
+}
+
+/*END OF INTRO SECTION*/
+
+/*SUCCEED INFO SECTION*/
+
+#succeed-info{
+	padding: 0 10%;
+}
+
+#succeed-info h2{
+	margin-bottom: 2rem;
+}
+
+#succeed-info .card, .card h3{
+	margin-bottom: 1rem;
+}
+
+#succeed-info .header{
+	text-align: center;
+}
+
+#succeed-info .card{
+	display: inline-block;
+	vertical-align: top;
+	min-height: 17px;
+	width: 30%;
+	margin: 0 0.5rem;
+}
+
+#succeed-info h3{
+	text-align: center;
+}
+
+.card p{
+	text-align: justify;
+}
+
+/*END OF SUCCEED INFO SECTION*/
+
+/*.pre-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}*/
+
+/*.pre-footer div{
+	margin-right: 10px;
+}*/
+
+/*.pre-footer{
+	text-align: center;
+}*/
+
+.pre-footer{
+	background: #002540;
+	color: #FFF;
+}
+
+.pre-footer div{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 20%;
+	margin:0.3rem 0;
+}
+
+footer{
+	border-top: 1px solid #C2195B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/*
+Member 2:
+Add a selector and a CSS rule set for the div elements inside the pre-footer section to align the elements horizontally but still be allowed to define its width or height.
+Define the width of each div as 20%
+
+Member 3:
+Add a selector and CSS rule set for all of the elements inside the div element inside the pre-footer section:
+Add a margin of .3 rem at the top and bottom.
+Note: You can add classes to elements or use child selectors.
+*/

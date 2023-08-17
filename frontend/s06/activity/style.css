@@ -1,0 +1,30 @@
+*{
+	font-family: "Verdana", sans-serif;
+}
+
+.external-style{
+	color: yellow;
+}
+
+.heading,.languagesToLearn-title, .toolsToUse-title{
+	font-weight: bold;
+}
+
+.subheading-title{
+	text-transform: uppercase;
+}
+
+
+.languagesList, .toolsList{
+	padding-inline-start: 15px;
+}
+
+.languagesToLearn .languagesList li{
+	background: green;
+	text-transform: capitalize;
+}
+
+.toolsToUse .toolsList li{
+	text-transform: capitalize;
+	border: blue;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Introduction</title>
+
+	<!-- External styling -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Internal styling -->
+	<style type="text/css">
+		h1{
+			color: rebeccapurple;
+		}
+	</style>
+</head>
+<body>
+	<nav id="top" style="display: inline-flex;"> 
+
+		<a href="#landing" style="margin: 0 10px 0 0;">Zuitt</a> 
+		<div>
+			<a href="#landing">Landing</a>
+			<a href="#offerings">Courses</a>
+		</div>
+	</nav>
+
+	<!-- Inline styling -->
+	<h1 id="headerTitle" class="header-title" style="color: darkcyan;">Hello World!</h1>
+
+	<section id="landing">
+		<h2>Welcome to Zuitt!</h2>
+		<h3 id="zuitt-motto">Opportunities for everyone, everywhere</h3>
+
+		<div class="image-container">
+			<img class="image1" src="https://place-puppy.com/450x450" alt="Picture of Puppy">
+		</div>
+
+		<ol id="bootcamp-learning-list">
+			<li class="offering-item1">day class</li>
+			<li class="offering-item2">night class</li>
+			<li class="offering-item3">short courses</li>
+		</ol>
+
+		<a href="#top">Back to top</a>		
+	</section>
+
+	<section id="offerings">
+		<h2>Courses</h2>
+		<h3 class="modules">Frontend Development</h3>
+		<ol>
+			<li>Git</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ol>
+
+		<h3 class="modules">Backend Development</h3>
+		<ol>
+			<li>JavaScript</li>
+			<li>Java</li>
+			<li>MySQL</li>
+			<li>Java Springboot</li>
+		</ol>
+
+		<h3 class="modules">Fullstack Development</h3>
+		<ol>
+			<li>Git</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>Java</li>
+			<li>MySQL</li>
+			<li>Java Springboot</li>
+		</ol>
+	</section>
+
+<!-- 	<section>
+		<h2>Register</h2>
+		<form>
+			<textarea placeholder="Message"></textarea>
+		</form>		
+	</section> -->
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- name="viewport": This attribute specifies that the <meta> tag is meant to define the viewport settings for the webpage. -->
+	<!-- width=device-width: This property sets the width of the viewport to be equal to the device's screen width.  -->
+	<!-- initial-scale=1: This property sets the initial zoom level of the webpage to 100%,  -->
+	<!-- shrink-to-fit=no: This property prevents the webpage from automatically shrinking its content to fit within the viewport. Without this property, some mobile browsers might attempt to shrink the content to fit the screen, potentially making it too smallzto read or interact with. -->
+
+	<title> Bootstrap: Layout and Best Practices </title>
+
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- CSS Link -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+<!-- 	<h1 class="text-center"> GRID LAYOUT </h1>
+	<div class="d-grid gap-2 m-5 mx-auto w-50">
+		<div class="p-2 bg-primary border ms-5"> Item 1 </div>
+		<div class="p-2 bg-secondary border me-5"> Item 2 </div>
+		<div class="p-2 bg-success border mx-5"> Item 3 </div>
+	</div> -->
+
+	<main class="container-fluid">
+		<header class="row mt-5">
+			<h1 class="text-center">Hello, Madlang People. Mabuhay!</h1>
+		</header>
+
+		<nav class="bg-warning p-2 d-flex justify-content-center d-grid gap-5">
+			<div>Home</div>
+			<div>About</div>
+			<div>Contact</div>
+		</nav>
+
+		<section class="row mt-5">
+			<figure class="col-lg-6 d-flex justify-content-center align-items-center">
+				<div>
+					<img class="img-fluid" src="https://place-puppy.com/450x350?q=best&f=png">
+				</div>
+			</figure>
+			<figcaption class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
+				<h2>About Us</h2>
+				<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta hendrerit lobortis. Nulla dignissim at magna non ultrices. Donec sem massa, gravida id efficitur eu, porta at odio. Nam interdum, tortor imperdiet blandit pharetra, est magna tincidunt enim, ut faucibus ante erat sed ante. Sed molestie nunc erat, ac ornare lacus maximus in. Vivamus elementum leo magna, eget placerat mi vestibulum in. Nullam non ex id massa ultrices aliquet. Praesent hendrerit metus metus, at malesuada diam lacinia id. Etiam posuere urna sit amet risus luctus accumsan. Nullam vitae orci justo. Nunc ut orci eros.</p>
+			</figcaption>
+		</section>
+
+		<section class="row mt-5 text-center">
+			<div class="col-md-6 col-lg-4 mb-3">
+				<div class="p-5 border border-dark bg-warning-subtle pic-card">
+					<h3>Picture 1</h3>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-3">
+				<div class="p-5 border border-dark bg-warning-subtle pic-card">
+					<h3>Picture 2</h3>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 mb-3">
+				<div class="p-5 border border-dark bg-warning-subtle pic-card">
+					<h3>Picture 3</h3>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer d-flex justify-content-center d-grid gap-5 mt-5">
+			<div>Footer</div>
+			<div>|</div>
+			<div>Terms of Use</div>
+			<div>|</div>
+			<div>Copyright</div>
+		</footer>
+	</main>
+
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

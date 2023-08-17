@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>S04</title>
+</head>
+<body>
+	<header><h1>Zuitt IT Solutions</h1></header>
+	<main>
+		<section>
+			<h3>Products Offered</h3>
+			<table border="*">
+				<tr>
+					<th>Package</th>
+					<th>Price</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Basic</td>
+					<td>500.00</td>
+					<td>Package includes fully functional website with desired specifications.</td>
+				</tr>
+				<tr>
+					<td>Premium</td>
+					<td>1000.00</td>
+					<td>Enjoy all the benefits of the basic package and also includes the support and maintenance.</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center"> <strong> Additional features after initial project is inclusive of changes </strong> </td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3>Contact Forms</h3>
+			<form action="sample.html" method="GET">
+				<label for="firstName">First Name: </label><br>
+				<input type="text" name="firstName" id="firstName" required="true">
+
+				<br>
+
+				<label for="lastName">Last Name: </label><br>
+				<input type="text" name="lastName" id="lastName" required="true">
+
+				<br>
+
+				<label for="emailAdd">Email: </label><br>
+				<input type="Email" name="emailAdd" id="emailAdd" required="true">
+
+				<br>
+
+				<label for="contactNum">Contact Number: </label><br>
+				<input type="number" name="contactNum" id="contactNum" required="true">
+
+				<br>
+
+				<label for="serviceType">Service Type: </label><br>
+				<select name="serviceType" id="serviceType" required="true">
+					<option>Front End Programming</option>
+					<option>Back End Programming</option>
+					<option>Fullstack Programming</option>
+				</select>
+
+				<br>
+
+				<label>Preferred Contact: </label><br>
+				<input type="checkbox" name="choiceOne" id="choiceOne">
+				<label for="choiceOne">Email</label><br>
+				
+				<input type="checkbox" name="choiceTwo" id="choiceTwo">
+				<label for="choiceTwo">Phone</label>
+
+				<br>
+
+
+				<label>Package: </label><br>
+				<input type="radio" name="package" id="package">
+				<label for="package">Basic</label><br>
+				<input type="radio" name="package" id="package">
+				<label for="package">Premium</label>
+
+				<br><br>
+
+				<label for="message">Message: </label><br>
+				<textarea spellcheck="true" name="message" id="message"></textarea><br>
+
+				<td><button type="submit">Send Inquiry</button></td><br>
+				<td><button type="reset" >Reset</button>
+
+			</form>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/*CSS reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2,h3,h4{
+	margin: 10px 0;
+}
+
+#div-3{
+	background-color: greenyellow;
+	border: 2px solid black;
+}
+
+#div-4{
+	background-color: yellowgreen;
+	border: 2px solid black;
+}
+
+#div-3, #div-4{
+	display: inline;
+	height: 200px;
+	width: 200px;
+}
+
+#span-3{
+	background-color: grey;
+	border: 2px solid black;
+}
+
+#span-4{
+	background-color: gray;
+	border: 2px solid black;
+}
+
+#span-3, #span-4{
+	display: block;
+	height: 200px;
+	width: 200px;
+}
+
+#span-5{
+	background-color: fuchsia;
+	border: 2px solid black;
+}
+
+#span-6{
+	background-color: mistyrose;
+	border: 2px solid black;
+}
+
+#span-5, #span-6{
+	display: inline-block;
+	height: 200px;
+	width: 200px;	
+}
+
+#div-5{
+	background-color: aliceblue;
+	border: 2px solid black;
+}
+
+#div-6{
+	background-color: chocolate;
+	border: 2px solid black;
+}
+
+#div-5, #div-6{
+	display: inline-block;
+	height: 200px;
+	width: 200px;	
+}
+
+#div-7{
+	background-color: aquamarine;
+	border: 2px solid black;
+}
+
+#div-8{
+	background-color: lightcyan;
+	border: 2px solid black;
+}
+
+#span-7{
+	background-color: lightgreen;
+	border: 2px solid black;
+}
+
+#div-7, #div-8, #span-7{
+	display: none;
+}
+
+.box{
+	background-color: tomato;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.parent{
+	width: 125px;
+	border: 2px solid navy;
+	font-size: 30px;
+}
+
+.fifty-percent{
+	width: 50%;
+}
+
+.one-hundred-pixels{
+	width: 100px;
+}
+
+.fifty-vw{
+	width: 50vw;
+}
+
+.twenty-five-vh{
+	height: 25vh;
+}
+
+.one-rem{
+	font-size: 1rem;
+}
+
+.one-em{
+	font-size: 1em;
+}
+
+.two-rem{
+	font-size: 2rem;
+}
+
+.two-em{
+	font-size: 2em;
+}
+
+.two-hundred-percent{
+	font-size: 200%;
+}
+
+
+/*CSS Backgorund properties*/
+.background{
+	min-height: 100vh;
+	background-image: url('https://images-ext-1.discordapp.net/external/LAZ-368YL019c35CJoiL-S4LZcDxpZUxAyxNqvPof2s/https/c4.wallpaperflare.com/wallpaper/43/1003/707/anime-your-name-kimi-no-na-wa-mitsuha-miyamizu-wallpaper-preview.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+/*	background-attachment: scroll;*/
+}
+
+.container-bg{
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-title{
+	color: #FFF;
+	text-align: center;
+	font-size: 5em;
+	line-height: 35rem;
+}
