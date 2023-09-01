@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<!-- End of Bootstrap Link -->
+
+	<!-- Font Dependencies -->
+	<!-- For Anton-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<!-- For Inter -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<!-- For Judson -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+	<!-- End of Font Dependencies -->
+
+
+	<!-- CSS Link -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- End of CSS Link -->
+
+	<title>My Profile</title>
+
+</head>
+<body class="bg-light">
+	<!-- Header: For NavBar -->
+	<header>
+		<nav class="container-fluid p-1 bg-nav fixed-top">
+			<ul class="d-flex justify-content-center align-items-center mb-0 gap-3 body-text">
+				<li class="order-3 navLogo mx-1"> <a href="#landing"> <img src="images/main-logo.png" width="60px" height="40px"> </a> </li>
+				<li class="order-1"> <a href="#about" class="navLink text-dark fw-normal">About</a> </li>
+				<li class="order-2"> <a href="#my-projects" class="navLink text-dark fw-normal">My Projects</a> </li>
+				<li class="order-4"> <a href="#my-tools" class="navLink text-dark fw-normal">Tools</a> </li>
+				<li class="order-5"> <a href="#contact-me" class="navLink text-dark fw-normal">Contact</a> </li>
+			</ul>
+		</nav>
+		<div id="landing">
+			<div class="container-fluid header-bg p-5">
+				<h1 class="header-title text-light text-center fw-bolder">kyle magpantay</h1>
+				<div class="header-banner">
+					<h1 class="subbanner-title text-secondary fw-bolder">Full Stack</h1>
+					<h1 class="subbanner-subtitle text-secondary fw-bolder">Web Developer</h1>
+				</div>
+			</div>
+			<!-- Insert background image here with translucent overlay -->
+		</div>
+	</header>
+	<!-- End of Header -->
+
+	<!-- Section: Tools -->
+	<section id="my-tools" class="border-light border-bottom border-top mb-5">
+		<div class="container-fluid bg-tools">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 d-flex justify-content-md-center align-items-center my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+					<div class="text-box">
+					    <h4 class="header-text">HTML</h4>
+					    <p class="body-text fw-light mb-0">For structure</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 d-flex justify-content-md-center align-items-center my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"/></svg>
+					<div class="text-box">
+					    <h4 class="header-text">Bootstrap</h4>
+					    <p class="body-text fw-light mb-0">The frontend toolkit.</p>
+					</div>					 
+				</div>
+				<div class="col-md-4 col-sm-12 d-flex justify-content-md-center align-items-center my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+					<div class="text-box">
+					    <h4 class="header-text">CSS</h4>
+					    <p class="body-text fw-light mb-0">Describe the HTML</p>
+					</div>					 
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Tools Section -->
+
+	<!-- Section: Projects -->
+	<section id="my-projects" class="p-5">
+		<div class="container-fluid">
+			<div class="row justify-content-around">
+				<h1 class="m-3 text-center text-dark header-text fw-bold">My Projects</h1>
+				<div class="col-md-4 col-sm-12 my-2">
+					<div class="card mx-1 h-100">
+						<img src="images/project1.png" class="card-img-top" alt="..." height="75%">
+					  	<div class="card-body d-flex flex-column">
+					    	<h5 class="card-title text-center header-text">TGA LMS</h5>
+					    	<p class="card-text content-text">The Global Academy's Learning Module System, catering different users: admin, students, and instructors.</p>
+
+					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 my-2">
+					<div class="card mx-1 h-100">
+						<img src="images/project2.png" class="card-img-top" alt="..." height="75%">
+					  	<div class="card-body d-flex flex-column">
+					    	<h5 class="card-title text-center header-text">ECommerse</h5>
+					    	<p class="card-text content-text">A startup website application for buy and sell founded by Cavite State University CoE students.</p>
+
+					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 my-2">
+					<div class="card mx-1 h-100">
+						<img src="images/project3.png" class="card-img-top" alt="..." height="75%">
+					  	<div class="card-body d-flex flex-column">
+					    	<p class="card-title text-center header-text">LEJ LMS</p>
+					    	<p class="card-text content-text">Another Learning Module System, this time, for learning English with joy.</p>
+
+					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Projects Section -->
+
+	<!-- Section: about -->
+	<section id="about" class="my-3 py-5">
+		<div class="container-fluid ">
+			<div class="row">
+				<h1 class="text-center text-dark header-text fw-bold mb-5">About</h1>
+				<div class="col-md-4 col-sm-12 order-1">
+					<div class="about-image">
+						<img class="w-100" src="images/profile.jpg" data-src="holder.js/150x150?theme=social" alt="150x150" data-holder-rendered="true">
+					</div>					
+				</div>
+				
+				<div class="col-md-8 col-sm-12 order-2 d-flex justify-content-center align-items-center">
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+				  		<div class="carousel-inner">
+				    		<div class="carousel-item active">
+				    			<div class="row justify-content-center align-items-center mx-3">
+			    					<div class="d-flex flex-column about-text">
+			    						<p class="card-text content-text">Hi! I'm Kyle Trisha Magpantay, and I am a passionate full stack developer. I have always had a keen interest in technology and love working with both front-end and back-end development. With a solid understanding of various programming languages, frameworks, and databases, I bring a versatile skill set to the table.</p>
+			    					</div>
+				    			</div>
+			    			</div>
+				    		<div class="carousel-item">
+				    			<div class="row justify-content-center align-items-center mx-3">
+			    					<div class="d-flex flex-column about-text">
+			    						<p class="card-text content-text">I enjoy the challenge of creating dynamic and intuitive user experiences while ensuring seamless functionality on the backend. Whether it's crafting visually appealing UIs, building robust APIs, or optimizing database performance, I strive to deliver high-quality solutions that meet the needs of users and clients. </p>
+			    					</div>
+				    			</div>
+				    		</div>
+				    		<div class="carousel-item">
+				    			<div class="row justify-content-center align-items-center mx-3">
+			    					<div class="d-flex flex-column about-text">
+			    						<p class="card-text content-text"> I am constantly learning and staying up-to-date with the latest industry trends to enhance my expertise and contribute to innovative projects. Let's collaborate and bring your ideas to life!</p>
+			    					</div>
+				    			</div>					    		
+				    		</div>
+				    	</div>
+				  	</div>		
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of About Section -->
+
+	<!-- Section: Contact -->
+	<section id="contact-me" class="mt-5">
+		<div class="container-fluid bg-dark p-3">
+			<div class="row">
+				
+				<div class="col-md-6 col-sm-12 order-2">
+					<h3 class="text-center text-light header-text fw-bold my-3">Contact Me</h3>
+					<form id="form-col" class="text-light content-text">
+					  	<div class="form-group mb-3">
+					    	<label for="name">Name</label>
+					    	<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+					  	</div>
+					  	<div class="form-group mb-3">
+					    	<label for="emailAddress">Email Address</label>
+					    	<input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+					 	</div>
+					  	<div class="form-group mb-3">
+					    	<label for="contactNumber">Contact Number</label>
+					    	<input type="number" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
+					  	</div>
+					  	<div class="form-group">
+					  		<label for="message">Message</label>
+					    	<textarea id="message" placeholder="Enter your message" class="w-100 rounded py-2 px-3" rows="5" required></textarea>
+					  	</div>
+					  	<button class="btn-projects text-white p-2 mt-2 border border-dark rounded w-100" type="button" data-bs-toggle="modal" data-bs-target="#modalDiv">Send Email</button>
+
+					  	<!-- Modal -->
+					  	<div class="modal fade" id="modalDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					    	<div class="modal-dialog">
+					      		<div class="modal-content">
+					        		<div class="modal-header">
+					          			<h1 class="modal-title fs-5 text-dark" id="modalDivLabel">Thank you for contacting me</h1>
+					        		</div>
+					        		<div class="modal-body justify-content-center text-dark">
+					          			Message successfully sent!
+					        		</div>
+					        		<div class="modal-footer">
+					          			<button type="button" class="btn btn-projects" data-bs-dismiss="modal">Close</button>
+					        		</div>
+					      		</div>
+					    	</div>
+					  </div>
+					</form>
+				</div>
+				<div class="col-md-4 col-sm-12 order-1">
+					<li class="order-3 navLogo mx-1 d-flex justify-content-center align-items-center m-3"> <a href="#landing"> <img src="images/main-logo.png" width="180px" height="150px"> </a> </li>
+				</div>
+				<div class="col-md-2 col-sm-12 d-none"></div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Contact Section -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<!-- Footer proper -->
+		<div class="container-fluid bg-nav p-1">
+			<div class="d-flex justify-content-center d-grid gap-3 text-dark body-text font-weight-light footer-foot">
+				<div>Footer</div>
+				<div>|</div>
+				<div>Terms of Use</div>
+				<div>|</div>
+				<div>Copyright 2023</div>				
+			</div>
+		</div>
+	</footer>
+	<!-- End of Footer -->
+
+
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<!-- End of Bootstrap Script -->
+</body>
+</html>
