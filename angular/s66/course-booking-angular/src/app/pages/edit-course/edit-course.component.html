@@ -1,0 +1,22 @@
+<!-- Update step 3.) This is where the user input his/her values to update a specific course record/row/object -->
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+        <h3>Update Course</h3>
+        <!-- Update step 3.) Upon clicking Update button, onSubmit() function from edit-course.component.ts will be invoked -->
+        <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="course.name" required="">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control" name="description" [(ngModel)]="course.description" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="number" class="form-control" name="price" [(ngModel)]="course.price" required>
+            </div>
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+    </div>
+</div>

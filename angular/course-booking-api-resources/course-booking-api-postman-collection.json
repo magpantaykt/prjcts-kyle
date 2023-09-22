@@ -1,0 +1,760 @@
+{
+	"info": {
+		"_postman_id": "533ee9be-3998-441b-a2b3-3916352c1f51",
+		"name": "MELN Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "List All Events",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/all",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Upcoming Events",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c80c8c20e3669281f21607e\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/detail",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"eventName\": \"Name\",\r\n\t\"description\": \"Description\",\r\n\t\"organization\": \"Organization\",\r\n\t\"contactPerson\": \"Contact Person\",\r\n\t\"contactNumber\": \"Contact Number\",\r\n\t\"ticketFee\": 100,\r\n\t\"address\": \"Address\",\r\n\t\"schedule\": [\r\n\t\t{\r\n\t\t\t\"scheduleInfo\": {\r\n\t\t\t\t\"slotCount\": 50, \r\n\t\t\t\t\"date\": \"2019-01-01\",\r\n\t\t\t\t\"timeStart\": \"09:00\",\r\n\t\t\t\t\"timeEnd\": \"10:00\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"scheduleInfo\": {\r\n\t\t\t\t\"slotCount\": 50, \r\n\t\t\t\t\"date\": \"2019-02-01\",\r\n\t\t\t\t\"timeStart\": \"13:00\",\r\n\t\t\t\t\"timeEnd\": \"15:00\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c807dfb241c2c504d13c834\",\n\t\"eventName\": \"updatedEventName\",\n\t\"description\": \"updatedDescription\",\n\t\"organization\": \"updatedOrganization\",\n\t\"contactPerson\": \"updatedContactPerson\",\n\t\"contactNumber\": \"updatedContactNumber\",\n\t\"ticketFee\": 150,\n\t\"address\": \"updatedAddress\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/detail",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event Schedule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c80c8c20e3669281f21607e\",\n\t\"scheduleId\": \"5c80c8c20e3669281f216080\",\n    \"slotCount\": 2000,\n    \"date\": \"2019-01-01T00:00:00.000Z\",\n    \"timeStart\": \"09:00\",\n    \"timeEnd\": \"10:00\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/schedule",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								"schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Entire Event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c7e633865747f3a19d8e19a\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event Schedule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c7e633865747f3a19d8e19a\",\n\t\"scheduleId\": \"5c7e633865747f3a19d8e19c\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/event/schedule",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"event",
+								"schedule"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "Create Reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"eventId\": \"5c80c8c20e3669281f21607e\",\n\t\"eventScheduleId\": \"5c80c8c20e3669281f21607f\",\n\t\"fullName\": \"Sylvan Cahilog\",\n\t\"transactionType\": \"payment\",\n\t\"datetimeRecorded\": \"2019-03-05 15:00\",\n\t\"debitAmount\": 0,\n\t\"creditAmount\": 50,\n\t\"stripeDepositId\": \"\",\n\t\"ticketCount\": 5,\n\t\"eventName\": \"event Name Here\",\n\t\"date\": \"2019-04-01\"\n\t\"timeStart\": \"12:00\",\n\t\"timeEnd\": \"13:00\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/reservation",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Schedule Conflict",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"date\": \"2019-04-01\",\n\t\"timeStart\": \"13:00\",\n\t\"timeEnd\": \"17:00\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/reservation/check-conflict",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"reservation",
+								"check-conflict"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event Data (Reservation)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c80c8c20e3669281f21607e\",\n\t\"scheduleId\": \"5c80c8c20e3669281f216080\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/reservation/event-data",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"reservation",
+								"event-data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Remaining Slots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5c80c8c20e3669281f21607e\",\n\t\"scheduleId\": \"5c80c8c20e3669281f216080\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/reservation/check-remaining-slots",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"reservation",
+								"check-remaining-slots"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"emailAddress\": \"sqcahilog@gmail.com\",\n\t\"password\": \"sylvan\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/user/login",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"currentPassword\": \"sylvan\",\n\t\"newPassword\": \"sylvan\",\n\t\"confirmNewPassword\": \"sylvan\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/user/change-password",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"user",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Sylvan\",\n\t\"lastName\": \"Cahilog\",\n\t\"emailAddress\": \"sqcahilog@gmail.com\",\n\t\"password\": \"sylvan\",\n\t\"role\": \"user\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/user/register",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reservation History",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{nodeLocation}}/user/reservations",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"user",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "Topup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"transactionType\": \"deposit\",\n\t\"debitAmount\": 5000,\n\t\"creditAmount\": 0,\n\t\"stripeDepositId\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/wallet/topup",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"wallet",
+								"topup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Balance",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/wallet/balance",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"wallet",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{nodeLocation}}/wallet/history",
+							"host": [
+								"{{nodeLocation}}"
+							],
+							"path": [
+								"wallet",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

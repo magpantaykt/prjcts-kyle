@@ -1,0 +1,14 @@
+Instructions
+
+Create a page component named RegisterComponent.
+The form must have the following fields:
+
+First Name
+Last Name
+Email
+Password
+Confirm Password
+
+
+Upon submitting the login form, print the email and password values to the console.
+Stretch goal: whenever the values of password and confirm password do not match, show an alert below the confirm password field using a conditional directive.

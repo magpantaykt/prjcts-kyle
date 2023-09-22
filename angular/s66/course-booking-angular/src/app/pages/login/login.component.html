@@ -1,0 +1,24 @@
+<!--  
+    (ngSubmit) defines which method a form will invoke/will execute once the form is submitted.
+    [ngModel] defines which model variable value will be shown to the input field. 
+    (ngModelChange) defines which model variable will the updated input value go to
+
+    [(ngModel)] - used as shorthand syntax for implementing two-way binding (Think of it as combined [ngModel] and (ngModelChange))
+
+-->
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+        <h3>Login</h3>
+        <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email"  class="form-control" [(ngModel)]="email"   name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" required>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    </div>
+</div>

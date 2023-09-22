@@ -1,0 +1,19 @@
+<div class = "card mb-3">
+    <div class="card-body">
+        <h4 class="card-title">{{course.name}}</h4>
+        <p>{{ course.description }}</p>
+        <p>{{ course.price}}</p>
+        <div *ngIf="isAdmin;">
+            <!-- Update step 1.) Once edit button is clicked edit() function will be called -->
+            <button type="button" class="btn btn-primary me-2" (click)="edit()">
+                Edit
+            </button>
+            <button type="button" class="btn btn-danger" (click)="archive(course)">Delete</button>
+        </div>
+        <div *ngIf="hasToken && !isAdmin;">
+            <button type="button" class="btn btn-info" (click)="enroll()">Enroll</button>
+
+        </div>
+
+    </div>
+</div>

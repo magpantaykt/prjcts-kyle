@@ -1,0 +1,7 @@
+In the register page component, remove the built-in component models (firstName, lastName, email and password) and use the User model instead.
+
+Update the template of the register page component to use the user model.
+
+Update the user service by adding the logic to send a request for registration.
+
+If the registration is successful, route the user to the login page.

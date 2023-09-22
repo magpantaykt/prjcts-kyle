@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Course Booking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/courses">Courses</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div *ngIf="hasToken; else noToken">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/logout">Logout</a>
+                    </li>
+                </div>
+                <div>
+                    <ng-template #noToken>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/register">Register</a>
+                        </li>
+                    </ng-template>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
